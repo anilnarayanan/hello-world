@@ -3,8 +3,8 @@ name: first
 on: push
 
 jobs:
-  my_first_job:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: My first step
-        uses: docker://alpine:3.8
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/hello-world-action
