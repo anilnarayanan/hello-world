@@ -1,6 +1,6 @@
 
 name: "Example"
-on: pull
+on: push
 jobs:
   my_first_job:
     steps:
